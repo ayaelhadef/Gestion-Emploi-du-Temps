@@ -1,0 +1,340 @@
+body {
+    background-color: #BFC7DE;
+}
+h1, h2 {
+    color: #1e3c72;
+}
+h1 {
+    border-left: 5px solid ;
+    padding-left: 15px;
+}
+h2 {
+    color: #2c3e66;
+    font-size: 1.5rem;
+}
+body .btn-primary {
+    background-color: #75708C;
+    border-color: #75708C;
+}
+body .btn-primary:hover {
+    background-color: #75708C;
+}
+body .btn-warning {
+    background-color: #75708C;
+    border-color: #75708C;
+    color: white;
+}
+body .btn-warning:hover {
+    background-color:#75708C;
+}
+
+body .btn-danger {
+    background-color:#C59594;
+    border-color: #C59594;
+}
+body .btn-danger:hover {
+    background-color:#C59594;
+}
+
+button[type="submit"].btn-success {
+    background-color:  #75708C;
+    
+}
+
+
+a[href="/cours"].btn-secondary {
+    background-color: #C59594;
+    color: white;
+}
+
+
+
+
+
+
+/* c'est pour le button d'ajouter qu'on a  */
+form[action="/etudiants/store"] button[type="submit"] {
+    background-color: #75708C; 
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form[action="/etudiants/store"] button[type="submit"]:hover {
+    background-color: #75708C;
+}
+
+/* celle ci pour le botton modifier qu'on a  */
+table button {  
+    background-color: #75708C;  
+    color: #f5f5f6;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+    margin-right: 5px;
+}
+
+table button:hover {
+    background-color: #75708C;
+}
+
+/*  supprimer */
+table a {  
+    background-color: #C59594;  
+    color: white;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+table a:hover {
+    background-color:#C59594;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+.filter-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.input-style {
+    flex: 1;
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #e3e6ef;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+.input-style:focus {
+    background: #d6daf0;
+}
+.btn-primary {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #091a5e;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background: #0d174a;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #75708C;
+    color: white;
+    padding: 12px;
+}
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f2f4ff;
+}
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+#modal div {
+    background: white;
+    width: 400px;
+
+    /*  remonte le popup */
+    margin-top: 40% auto;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+
+    /* ceci khadija permet de scroller si contenu long */
+    max-height: 90vh;
+    overflow-y: auto;
+}
+#modal div button {
+     padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #091a5e;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+select,
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+/* botton ajouter dans l'emploi*/
+
+form[action="/emplois/store"] button {
+    background: #75708C;
+    
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form[action="/emplois/store"] button:hover {
+    background: #75708C;
+    
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+/* 
+    botton EXPORT PDF 
+*/
+
+a[href*="/emplois/pdf"] {
+    display: inline-block;
+    background: #ef4444;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+a[href*="/emplois/pdf"]:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+/*
+ botton Afficher cours  */
+
+form[action="/emplois"] button {
+    background-color: #75708C;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+form[action="/emplois"] button:hover {
+    background-color: #75708C;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+/* here is for the responsive , I add it for different devices  */
+
+/* TABLET */
+@media (max-width: 992px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-style,
+    .btn-primary {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+}
+
+
+/* 
+   TABLE RESPONSIVE MOBILE FIX
+ */
+
+@media (max-width: 768px) {
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* MOBILE ULTRA  */
+@media (max-width: 768px) {
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        min-width: 120px;
+    }
+}

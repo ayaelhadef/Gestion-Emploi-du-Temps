@@ -1,0 +1,146 @@
+
+body{
+    margin:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(135deg,#C7DBF7,#BFC7DE,#75708C,#C59594);
+}
+
+/* hadi dyal layouts */
+.hero-container{
+    display:flex;
+    min-height:80vh;
+}
+
+
+.login-side{
+    width:60%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.login-box{
+    background:#BFC7DE;
+    padding:60px;
+    width:450px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+    text-align:center;
+}
+
+
+.login-box input{
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+
+.login-box button{
+    width:100%;
+    padding:14px;
+    font-size:20px;
+    background:#a095d1;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#a6deee;
+}
+
+/* hadi pour faire alignement de titre que j'ajoute et la paragraphe */
+.welcome-side{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.welcome-side h1,
+.welcome-side p{
+    text-align: left;
+    margin-left: 60px;
+}
+
+.welcome-side p{
+    max-width: 500px;
+    margin-top: 20px;
+}
+.welcome-text{
+    font-size:18px;
+    line-height:1.7;
+    margin:0;
+    color: azure;
+}
+h5{
+    color: #C59594;
+    background: black;
+   
+}
+footer{
+    background: black;
+    color: white;
+
+}
+@media (max-width: 992px) {
+
+    .hero-container {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .login-side {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .welcome-side {
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .welcome-side h1,
+    .welcome-side p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .login-box {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .welcome-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .login-box {
+        width: 100%;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .login-box button {
+        font-size: 16px;
+    }
+
+    .welcome-side h1 {
+        font-size: 22px;
+    }
+
+    .welcome-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
