@@ -16,7 +16,9 @@ use App\Http\Controllers\EnseignantController;
  LOGIN (public)
 
 */
-
+Route::get('/', function () {
+    return view('login');
+});
 Route::middleware('auth')->group(function () {
 
     // étudiant
