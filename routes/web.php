@@ -17,7 +17,7 @@ use App\Http\Controllers\EnseignantController;
 
 */
 Route::get('/', function () {
-    return "OK LARAVEL";
+    return view('login');
 });
 Route::middleware('auth')->group(function () {
 
